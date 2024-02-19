@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply overflow-x-hidden font-trirong;
+  }
+  * {
+    @apply m-0 box-border p-0 font-trirong;
+  }
+
+  a {
+    @apply no-underline hover:no-underline;
+  }
+  .bg-blur {
+    background: rgba(255, 255, 255, 0.7);
+  }
+  .circle-shadow {
+    box-shadow: 0px 14px 20px rgba(118, 118, 118, 0.35);
+  }
+  .bg-color {
+    background: linear-gradient(
+        0deg,
+        rgba(58, 51, 53, 0.04),
+        rgba(58, 51, 53, 0.04)
+      ),
+      #ffffff;
+  }
+
+  .ourHotelSlider .slick-slide {
+    @apply lg:!px-3 md:px-2 px-1;
+  }
+  .RoomSuiteSlider .slick-slide {
+    @apply lg:!px-3 md:px-2 sm:px-1 px-3;
+  }
+
+  .sliderDot .slick-dots {
+    @apply bottom-0;
+  }
+  .sliderDot .slick-list {
+    @apply pb-12;
+  }
+  .sliderDot .slick-dots li.slick-active button::before {
+    color: #00b5f0;
+    opacity: 0.75;
+  }
+  .sliderDot .slick-dots li button::before {
+    width: 10px !important;
+    height: 10px !important;
+    font-size: 10px !important;
+    border-radius: 50%;
+    color: #00b5f0;
+  }
+}
